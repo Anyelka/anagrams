@@ -22,7 +22,6 @@ public class Main {
             System.out.printf(" The two texts: (%s,%s) are %sanagrams%n", text1, text2, areAnagrams ? "" : "NOT ");
 
             // Part 2
-            // Solution 1 :only saving the words & calculating their anagrams on each new addition.
             System.out.print("\n = Part 2 = \n ");
             Map<String, List<String>> allTexts = Service.getSolution2(text1, text2);
             allTexts.forEach((key, value) -> System.out.printf("\n   - All anagrams for '%s' are: %s", key, value));
